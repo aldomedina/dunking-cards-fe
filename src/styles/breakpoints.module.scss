@@ -1,0 +1,15 @@
+$lg: 1600px;
+$md: 1440px;
+$sm: 720px;
+
+$breakpoints: (
+  "desktop": $lg,
+  "tablet": $md,
+  "mobile": $sm,
+) !default;
+
+:export {
+  desktop: $lg;
+  tablet: $md;
+  mobile: $sm;
+}

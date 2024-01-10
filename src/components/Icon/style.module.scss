@@ -1,0 +1,77 @@
+@import "../../styles/mixins.scss";
+
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
+
+.xxl {
+  height: 3rem;
+  width: 3rem;
+}
+.xl {
+  height: 2rem;
+  width: 2rem;
+}
+
+.lg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.md {
+  height: 1rem;
+  width: 1rem;
+}
+
+.sm {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+.xs {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.add {
+  mask-image: url(../../assets/icons/add.svg);
+}
+.arrow-r {
+  mask-image: url(../../assets/icons/arrow-r.svg);
+}
+.arrow-l {
+  mask-image: url(../../assets/icons/arrow-l.svg);
+}
+.ball {
+  mask-image: url(../../assets/icons/ball.svg);
+}
+.bin {
+  mask-image: url(../../assets/icons/bin.svg);
+}
+.burguer {
+  mask-image: url(../../assets/icons/burguer.svg);
+}
+.close {
+  mask-image: url(../../assets/icons/close.svg);
+}
+.copy {
+  mask-image: url(../../assets/icons/copy.svg);
+}
+.google-g {
+  mask-image: url(../../assets/icons/google-g.svg);
+}
+.person {
+  mask-image: url(../../assets/icons/person.svg);
+}
+.ranking {
+  mask-image: url(../../assets/icons/ranking.svg);
+}
+.team {
+  mask-image: url(../../assets/icons/team.svg);
+}

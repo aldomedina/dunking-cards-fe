@@ -1,0 +1,53 @@
+@import "../../styles/mixins.scss";
+
+.wrapper {
+  background-color: var(--color-cream-light);
+  background-image: var(--bg-pattern-dark);
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  .container {
+    @include mobileContainer;
+    padding-top: 3rem;
+    .blank {
+      height: 6rem;
+    }
+  }
+}
+
+.goBack,
+.burguer {
+  position: absolute;
+  top: 1rem;
+}
+
+.burguer {
+  right: 1rem;
+}
+.goBack {
+  left: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  .icon {
+    margin-right: 0.3rem;
+  }
+  .backText {
+    font-family: "din";
+    font-size: 1.4rem;
+  }
+}
+
+.nav {
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  width: 100%;
+  background-color: var(--color-cream-light);
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  &Container {
+    @include mobileContainer;
+  }
+}

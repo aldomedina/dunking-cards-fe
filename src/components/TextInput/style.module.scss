@@ -1,0 +1,35 @@
+@import "../../styles/mixins.scss";
+.label {
+  @include heading2;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.input {
+  border: 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: var(--border-radius, 4px);
+  padding: 1.1rem 0.5rem;
+  font-size: 0.8rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15) inset;
+  &:active,
+  &:focus {
+    border: none;
+    outline: 1px solid var(--color-green-primary);
+  }
+}
+.withButton {
+  padding-right: 4rem;
+}
+
+.inputWrapper {
+  position: relative;
+  width: max-content;
+  .btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
+}
+.fullWidth {
+  width: 100%;
+}

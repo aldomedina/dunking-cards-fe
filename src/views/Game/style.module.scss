@@ -1,0 +1,18 @@
+@import "../../styles/mixins.scss";
+
+.title {
+  @include heading1;
+  margin: 1rem 0 2rem;
+}
+.subtitle {
+  @include heading2;
+  margin: 0;
+}
+.selectPlayersTitle {
+  margin-bottom: 1rem;
+}
+.players {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

@@ -1,0 +1,100 @@
+@import "../../styles/mixins.scss";
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+
+  .top,
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom {
+    gap: 1rem;
+  }
+  .top {
+    .logotype {
+      width: 65%;
+      max-width: 200px;
+      aspect-ratio: 1.11;
+      background-size: cover;
+      background-image: url(../../assets/images/logotype.png);
+    }
+  }
+  .dashboardTitle {
+    @include heading1;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -1.5rem;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+.block {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.title {
+  @include heading1;
+  margin: 1rem 0 2rem;
+}
+.subtitle {
+  @include heading2;
+  margin: 0;
+}
+.players {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.createdGame {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/images/pink-explotion.png);
+  background-position: center;
+  text-align: center;
+}
+
+.urlBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 1.5rem 1rem;
+  background: var(--color-cream-light);
+  border: 1px solid var(--color-grey-light);
+  border-radius: var(--border-radius);
+  gap: 1rem;
+  .url {
+    font-style: italic;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .btn {
+    color: var(--color-grey);
+    min-width: 3rem;
+    display: grid;
+    place-items: center;
+  }
+  .separator {
+    height: 1.5rem;
+    min-width: 1px;
+    width: 1px;
+    background: var(--color-grey-light);
+  }
+}

@@ -1,0 +1,13 @@
+.wrapper {
+  max-width: 180px;
+  font-size: 0.8rem;
+  position: relative;
+  margin: 2rem 0 2.2rem;
+  .underline {
+    position: absolute;
+    bottom: -12px;
+    height: 4px;
+    width: 50%;
+    background-color: var(--color-pink-light);
+  }
+}
